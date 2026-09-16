@@ -18,8 +18,16 @@ The current evidence points to this conclusion:
 ## Evidence reviewed
 
 - [`video1.mp4`](evidence/video1.mp4) — best current output: `restyle_lora_wf` with scene-cut detection, especially `shot_context`.
+
+<video controls width="640" src="https://raw.githubusercontent.com/Yuvrajxms09/video-restyling/main/evidence/video1.mp4"></video>
+
 - [`video2.mp4`](evidence/video2.mp4) — second-best direction: `restyle_lora_wf` processing the whole video, including a video that contains cuts. Motion is more coherent, but the style weakens later in the video.
+
+<video controls width="640" src="https://raw.githubusercontent.com/Yuvrajxms09/video-restyling/main/evidence/video2.mp4"></video>
+
 - [`video3.mp4`](evidence/video3.mp4) — mouth-motion reference baseline from `community_workflow`. It shows the strongest mouth movement and should be used to compare against `restyle_lora_wf`.
+
+<video controls width="640" src="https://raw.githubusercontent.com/Yuvrajxms09/video-restyling/main/evidence/video3.mp4"></video>
 
 Include `video1.mp4` and `video2.mp4` as the main quality comparison: scene-cut LoRA is the best overall result, and whole-video LoRA is the backup baseline with weaker style. Include `video3.mp4` only as the motion and mouth-movement reference. Do not present Viggle or LoRA-applied community-workflow results as candidate solutions; they were tested and produced poor restyling, reduced motion, and/or artifacts.
 
